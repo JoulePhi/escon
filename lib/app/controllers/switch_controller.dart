@@ -26,7 +26,8 @@ class SwitchController extends GetxController {
 
   void changeState(a) {
     isOn.value = a;
-    publish('escon/device/id/${Get.parameters['id']}', a.toString());
+    Map data = {"device": !a};
+    publish('escon2024/${Get.parameters['id']}', data.toString());
   }
 
   Future<void> init() async {

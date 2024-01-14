@@ -16,7 +16,7 @@ class DashboardPage extends StatelessWidget {
         resizeToAvoidBottomInset: false,
         backgroundColor: const Color(0xfff6f8fc),
         body: Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
+            padding: const EdgeInsetsDirectional.fromSTEB(20, 20, 20, 0),
             child: GetBuilder(
               id: 'datas',
               init: RoomsController(),
@@ -64,7 +64,7 @@ class DashboardPage extends StatelessWidget {
                       size: const Size.fromHeight(5),
                     ),
                     Container(
-                      height: 5,
+                      height: 2,
                       width: 100,
                       decoration: const BoxDecoration(
                           color: Color(0x44262647),
@@ -211,8 +211,8 @@ class DashboardPage extends StatelessWidget {
               }),
             )),
         floatingActionButton: SizedBox(
-          width: 70,
-          height: 70,
+          width: 60,
+          height: 60,
           child: FloatingActionButton(
             onPressed: () {
               addDevice();

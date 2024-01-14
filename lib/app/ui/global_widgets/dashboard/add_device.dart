@@ -28,8 +28,8 @@ void addDevice() {
                       c.changeIcon();
                     },
                     child: SizedBox(
-                        width: 100,
-                        height: 100,
+                        width: 50,
+                        height: 50,
                         child: Image.asset(
                           c.path.value,
                           color: const Color(0xff685ee9),
